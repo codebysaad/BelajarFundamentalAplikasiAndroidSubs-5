@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Favorite Apps</string>
+    <string name="title">Title</string>
+    <string name="release_date">December 12, 2018</string>
+    <string name="desc_poster_detail">This is a poster image of the selected item</string>
+    <string name="original_language">Original Language</string>
+    <string name="language">Language</string>
+    <string name="desc_ic_actor">This is an icon for actor items</string>
+    <string name="overview">Overview</string>
+    <string name="overview_value">This is a overview of the film</string>
+    <string name="detail_movie">Detail Movie</string>
+    <string name="FORMAT_IN">yyyy-MM-dd</string>
+    <string name="FORMAT_OUT">EEEE, dd MMM yyyy</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="vote_average_value">7.8</string>
+    <string name="vote_rating">Vote Rating</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="vote_count_value">724.009</string>
+    <string name="popularity">Popularity</string>
+    <string name="loading">Loading...</string>
+    <string name="rating_movie">Rating Movie</string>
+
+    <string name="released_date">Released Date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

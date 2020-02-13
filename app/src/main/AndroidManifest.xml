@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="xyz.webflutter.moviecatalogue">
+
+    <application
+        android:name=".helper.MyAplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.UpcomingActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:label="@string/upcoming_act"/>
+        <activity
+            android:name=".activities.SearchActivityTvShow"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/FavTheme" />
+        <activity
+            android:name=".activities.SettingRemindersActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.SearchActivityMovie"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/FavTheme" />
+        <activity
+            android:name=".activities.FavActivity"
+            android:theme="@style/FavTheme" />
+        <activity
+            android:name=".activities.DetailTvShowActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/detail"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <provider
+            android:name=".providers.MovieContentProvider"
+            android:authorities="xyz.webflutter.moviecatalogue"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="xyz.webflutter.moviecatalogue.READ_DATABASE"
+            android:writePermission="xyz.webflutter.moviecatalogue.WRITE_DATABASE" />
+        <receiver android:name=".widget.MovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/movie_widget_info" />
+        </receiver>
+
+        <receiver android:name=".widget.MovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/movie_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".reminder.AlarmReminders"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".reminder.ReleaseTodayReminders"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".widget.StackWidgetServices"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+    <permission
+        android:name="xyz.webflutter.moviecatalogue.READ_DATABASE"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="xyz.webflutter.moviecatalogue.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+</manifest>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_view"
+        android:background="@drawable/bg_gradient_blue"
+        tools:context=".activities.MainActivity">
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/btn_fav_movie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@android:color/darker_gray"
+            app:allow_random_color="false"
+            app:btn_color="@android:color/darker_gray"
+            app:btn_fill_color="@android:color/holo_red_dark"
+            app:layout_anchor="@id/cons"
+            app:layout_anchorGravity="bottom|end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/overview"
+            app:layout_constraintTop_toBottomOf="@+id/table_1"
+            app:siShape="@raw/heart" />
+
+        <TableRow
+            android:id="@+id/table_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                style="@style/StyleViewDetailMovie"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_left" />
+
+            <View
+                style="@style/StyleViewDetailMovie"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_right" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/poster"
+            style="@style/PosterDetail"
+            android:contentDescription="@string/desc_poster_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/poster_avengerinfinity" />
+
+        <TextView
+            android:id="@+id/title_film"
+            style="@style/TitleStyle"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/poster"
+            tools:text="@string/title" />
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/ItemTextStyle"
+            android:text="@string/overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/table_1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/overviewLayout"
+            style="@style/CardViewDetail"
+            app:layout_constraintBottom_toBottomOf="@id/detail_view"
+            app:layout_constraintBottom_toTopOf="@+id/detail_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overview">
+
+            <TextView
+                android:id="@+id/overview_film"
+                style="@style/OverviewTextView"
+                tools:text="@string/overview_value" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/detail_view"
+            style="@style/ItemTextStyle"
+            android:text="@string/detail_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overviewLayout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detailLayout"
+            style="@style/CardViewDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_view"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableLayout
+                android:id="@+id/table_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/detailLayout"
+                app:layout_constraintEnd_toEndOf="@id/detailLayout"
+                app:layout_constraintStart_toStartOf="@id/detailLayout"
+                app:layout_constraintTop_toTopOf="@+id/detailLayout">
+
+                <TableRow style="@style/TableRowStyle">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/released_date" />
+
+                    <TextView
+                        android:id="@+id/date_film"
+                        style="@style/TextTableRowRight"
+                        tools:text="@string/release_date" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRowStyle"
+                    android:layout_marginTop="@dimen/margin_view">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/vote_average" />
+
+                    <TextView
+                        android:id="@+id/vote_average"
+                        style="@style/TextTableRowRight"
+                        tools:text="@string/vote_average_value" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRowStyle"
+                    android:layout_marginTop="@dimen/margin_view">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/vote_rating" />
+
+                    <RatingBar
+                        android:id="@+id/vote_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:isIndicator="true"
+                        android:numStars="10"
+                        android:stepSize="0.1" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRowStyle"
+                    android:layout_marginTop="@dimen/margin_view">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/vote_count" />
+
+                    <TextView
+                        android:id="@+id/vote_count"
+                        style="@style/TextTableRowRight"
+                        android:text="@string/vote_count_value" />
+
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRowStyle"
+                    android:layout_marginTop="@dimen/margin_view">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/original_language" />
+
+                    <TextView
+                        android:id="@+id/language"
+                        style="@style/TextTableRowRight"
+                        tools:text="@string/language" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/TableRowStyle"
+                    android:layout_marginTop="@dimen/margin_view">
+
+                    <TextView
+                        style="@style/TextTableRowLeft"
+                        android:text="@string/popularity" />
+
+                    <TextView
+                        android:id="@+id/popularity_film"
+                        style="@style/TextTableRowRight"
+                        tools:text="280.099" />
+                </TableRow>
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

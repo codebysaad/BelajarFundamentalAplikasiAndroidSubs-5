@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_view_margin_bottom">7dp</dimen>
+    <dimen name="card_corner_radius">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="margin_view">10dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="width_view_detail_movie">200dp</dimen>
+    <dimen name="height_view_detail_movie">300dp</dimen>
+    <dimen name="width_poster_movie">150dp</dimen>
+    <dimen name="height_poster_movie">200dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+</resources>

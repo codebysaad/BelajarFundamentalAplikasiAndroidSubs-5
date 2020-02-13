@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "5534678887",
+    "firebase_url": "https://apk-1-f8d29.firebaseio.com",
+    "project_id": "apk-1-f8d29",
+    "storage_bucket": "apk-1-f8d29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5534678887:android:2bce4da7eb5c9d50",
+        "android_client_info": {
+          "package_name": "com.example.saadfauzi.ritualmemanggilmakhlukhalus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5534678887-0tg3uqtnvcoo62d3gor05p5s07duqb3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saadfauzi.ritualmemanggilmakhlukhalus",
+            "certificate_hash": "9496ec0e132ba507dd8c96727d2779137cc643de"
+          }
+        },
+        {
+          "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAldR15t_g-7WndkdE4NlHhuSa2YFwMQNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5534678887:android:f2ff8b09b4f31965",
+        "android_client_info": {
+          "package_name": "com.republikgaming.biroauak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5534678887-3i0jdr1gks8e2optnj93h6ic05rn4qdi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.republikgaming.biroauak",
+            "certificate_hash": "fb18f2ca314e113f02451dba8b9c3e0b457a660c"
+          }
+        },
+        {
+          "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAldR15t_g-7WndkdE4NlHhuSa2YFwMQNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5534678887:android:b5d61c1be59ea2a0",
+        "android_client_info": {
+          "package_name": "com.republikgaming.blogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5534678887-4v1a6dq8hlb7i3l8mmpijkcdk62ngha5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.republikgaming.blogapp",
+            "certificate_hash": "fb18f2ca314e113f02451dba8b9c3e0b457a660c"
+          }
+        },
+        {
+          "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAldR15t_g-7WndkdE4NlHhuSa2YFwMQNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5534678887:android:786e5c0a852e57f2",
+        "android_client_info": {
+          "package_name": "xyz.webflutter.moviecatalogue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5534678887-dar6lcrjte4rcrjjkk9s7ss4tj57u530.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.webflutter.moviecatalogue",
+            "certificate_hash": "fb18f2ca314e113f02451dba8b9c3e0b457a660c"
+          }
+        },
+        {
+          "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAldR15t_g-7WndkdE4NlHhuSa2YFwMQNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5534678887-4f6baqff9g98pcmp82t89814ao2hiod4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
